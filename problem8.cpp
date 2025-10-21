@@ -1,5 +1,14 @@
-//
-// Created by Lenovo on 10/21/2025.
-//
+#include <iostream>
+using namespace std;
 
-#include "problem8.h"
+int sumDigits(int n) {
+    if (n == 0) return 0;
+    return n % 10 + sumDigits(n / 10);
+}
+
+int main() {
+    int num;
+    cin >> num;
+    cout << sumDigits(num) << endl;
+    return 0;
+}

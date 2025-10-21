@@ -1,5 +1,18 @@
-//
-// Created by Lenovo on 10/21/2025.
-//
+#include <iostream>
+using namespace std;
 
-#include "problem3.h"
+int sum(int n) {
+    if (n == 0) {
+        return 0;
+    }
+    else {
+        return n + sum(n - 1);
+    }
+}
+
+int main() {
+    int num;
+    cin >> num;
+    cout << sum(num) << endl;
+    return 0;
+}

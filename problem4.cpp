@@ -1,5 +1,14 @@
-//
-// Created by Lenovo on 10/21/2025.
-//
+#include <iostream>
+using namespace std;
 
-#include "problem4.h"
+int fact(int n) {
+    if (n == 0) return 1;
+    return n * fact(n - 1);
+}
+
+int main() {
+    int num;
+    cin >> num;
+    cout << fact(num) << endl;
+    return 0;
+}

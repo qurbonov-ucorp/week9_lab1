@@ -1,5 +1,15 @@
-//
-// Created by Lenovo on 10/21/2025.
-//
+#include <iostream>
+using namespace std;
 
-#include "problem7.h"
+double ser(int n) {
+    if (n==0) {
+        return 0;
+    }
+    else {
+        return 1.0/(n*(n+2)) + ser(n-1);
+    }
+}
+
+int main() {
+    cout << ser(3) ;
+}

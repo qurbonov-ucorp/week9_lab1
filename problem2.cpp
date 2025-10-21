@@ -1,5 +1,13 @@
-//
-// Created by Lenovo on 10/21/2025.
-//
+#include <iostream>
+using namespace std;
 
-#include "problem2.h"
+void print(int n) {
+    if (n > 50) return;
+    cout << n << endl;
+    print(n + 1);
+}
+
+int main() {
+    print(1);
+    return 0;
+}
