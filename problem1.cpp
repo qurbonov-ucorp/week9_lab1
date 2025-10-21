@@ -1,5 +1,6 @@
-//
-// Created by Lenovo on 10/21/2025.
-//
+#include <iostream>
+using namespace std;
 
-#include "problem1.h"
+int rec_fun(int n){
+
+}
